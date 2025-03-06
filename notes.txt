@@ -1,0 +1,9 @@
+useEffect: This hook runs a function every render of the components. This useEffect hook is a way to run code on every render. Normally inside useEffect function we could do something like fetch data or communicate with some kind of authentication service, and those things are known us side effects in react.
+
+We can also access the state (useState) inside useEffect, but one thing to be careful of is actually changing the state inside useEffect, because you could end up in a continous loop of renders.
+
+useEffect is a good place to fetch data in a component, because we know that it runs the function when the component first renders initially.
+
+
+-- using the json server package -- it's going to allows us to build fake Rest API just using a json file that we can use to test it out
+npx json-server --watch data/db.json
